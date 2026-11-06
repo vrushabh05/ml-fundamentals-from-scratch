@@ -1,0 +1,5 @@
+{
+  "BernoulliNB (binary, threshold 0.5)": 0.8944,
+  "MultinomialNB (3 levels)": 0.9056,
+  "GaussianNB (raw 0-1)": 0.825
+}

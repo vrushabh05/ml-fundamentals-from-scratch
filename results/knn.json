@@ -1,0 +1,100 @@
+{
+  "MyKNN-uniform": {
+    "accuracy": 0.9778,
+    "fit_ms": 0.0,
+    "predict_ms": 2.18,
+    "confusion": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  "sklearn-uniform": {
+    "accuracy": 0.9778,
+    "fit_ms": 2.22,
+    "predict_ms": 1.83,
+    "confusion": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  "MyKNN-distance": {
+    "accuracy": 0.9778,
+    "fit_ms": 0.0,
+    "predict_ms": 0.95,
+    "confusion": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  "sklearn-distance": {
+    "accuracy": 0.9778,
+    "fit_ms": 0.49,
+    "predict_ms": 0.59,
+    "confusion": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  "cv": {
+    "MyKNN": [
+      0.9733,
+      0.0249
+    ],
+    "sklearn": [
+      0.9667,
+      0.0298
+    ]
+  }
+}
