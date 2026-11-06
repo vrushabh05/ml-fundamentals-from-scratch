@@ -24,7 +24,7 @@ Classical machine-learning building blocks written by hand and checked against r
 - **Gradient descent, regression:** the original run on California housing (MedInc and Population, unscaled, lr 0.001) overflowed to infinity around iteration 40, so its train/test MSE were `inf` and the written "slight overfitting" verdict was not meaningful. Housing cannot be downloaded in this environment, so `gradient_descent.py` demonstrates the same failure on **seeded synthetic data with a similar scale mismatch** and shows that standardising the features and raising the learning rate converges to the noise floor (MSE 0.087 vs 0.09 true noise). This is a demonstration, not a reproduction of the housing result.
 - **Ensembles:** the original notebook's prose quoted ranges (e.g. 0.93 to 0.96) that do not match its own printed CV scores; the table above uses the printed and re-run values. Differences of 0.01 on 150 samples are within fold-to-fold noise (std about 0.02-0.03).
 
-## Recorded from the original notebooks (data not included, not re-run)
+## Recorded from the original notebooks (data not included, not re-run here; see `notebooks/` for the saved outputs)
 
 - **Housing EDA** (`src/housing_eda.py`): median house value is right-skewed with a hard cap at $500,000; median income vs value correlation is about 0.69; total rooms, bedrooms, households and population are strongly inter-correlated (0.91 to 0.98); latitude and longitude correlate at -0.92; coastal categories have higher prices.
 - **OLS on hours studied vs exam score** (25 rows): intercept 2.4837, slope 9.7758.
@@ -56,6 +56,21 @@ Each script writes its JSON to `results/`.
 | `src/ols_normal_equation.py` | Normal-equation least squares |
 | `src/housing_eda.py` | California housing exploration (needs the CSV) |
 | `results/` | Outputs of the scripts |
+
+## Notebooks
+
+The original assignment notebooks, with their saved outputs and figures, are included.
+
+| Notebook | Topic |
+|---|---|
+| [`HW1_Que6_housing_EDA.ipynb`](notebooks/HW1_Que6_housing_EDA.ipynb) | California housing exploration (5 embedded figures) |
+| [`HW2_Que6_tree_ensembles_iris.ipynb`](notebooks/HW2_Que6_tree_ensembles_iris.ipynb) | Decision tree vs ensembles on Iris |
+| [`HW3_Que6_KNN_from_scratch.ipynb`](notebooks/HW3_Que6_KNN_from_scratch.ipynb) | KNN from scratch vs scikit-learn |
+| [`HW4_naive_bayes_digits.ipynb`](notebooks/HW4_naive_bayes_digits.ipynb) | Naive Bayes variants on 8x8 digits |
+| [`HW4_source_gradient_descent_and_naive_bayes.ipynb`](notebooks/HW4_source_gradient_descent_and_naive_bayes.ipynb) | Gradient descent (the diverging housing run) and Naive Bayes with Laplace smoothing |
+| [`HW5_Que6_OLS_normal_equation.ipynb`](notebooks/HW5_Que6_OLS_normal_equation.ipynb) | Closed-form OLS |
+
+Student identifiers and Colab account metadata were removed; code and outputs are unchanged.
 
 ## Stack
 
